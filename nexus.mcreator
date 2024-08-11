@@ -1865,6 +1865,40 @@
           "src/main/resources/data/nexus/worldgen/structure/mediumtower.json"
         ]
       }
+    },
+    {
+      "name": "Core",
+      "type": "structure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "core",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/nexus/worldgen/structure/core.json",
+          "src/main/resources/data/nexus/worldgen/template_pool/core.json",
+          "src/main/resources/data/nexus/worldgen/structure_set/core.json"
+        ]
+      }
+    },
+    {
+      "name": "Sc",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/ScProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
