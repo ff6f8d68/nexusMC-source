@@ -4,9 +4,15 @@
  */
 package net.mcreator.nexusmc.init;
 
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.attachment.AttachmentType;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
 import net.minecraft.world.level.block.Block;
@@ -14,7 +20,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.nexusmc.item.inventory.TerminalInventoryCapability;
 import net.mcreator.nexusmc.item.WarpingdeviceItem;
+import net.mcreator.nexusmc.item.TerminalItem;
 import net.mcreator.nexusmc.item.NexustabiconItem;
 import net.mcreator.nexusmc.item.NexusshardItem;
 import net.mcreator.nexusmc.item.NexusriftitemItem;
@@ -25,6 +33,7 @@ import net.mcreator.nexusmc.item.InformationfetcherItem;
 import net.mcreator.nexusmc.block.display.MoonlightprojectorDisplayItem;
 import net.mcreator.nexusmc.NexusMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NexusModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, NexusMod.MODID);
 	public static final DeferredHolder<Item, Item> NEXUSRIFT_SPAWN_EGG = REGISTRY.register("nexusrift_spawn_egg", () -> new DeferredSpawnEggItem(NexusModEntities.NEXUSRIFT, -16777216, -16711681, new Item.Properties()));
@@ -66,11 +75,20 @@ public class NexusModItems {
 	public static final DeferredHolder<Item, Item> NEXUSRIFTITEM = REGISTRY.register("nexusriftitem", () -> new NexusriftitemItem());
 	public static final DeferredHolder<Item, Item> MOONLIGHTPROJECTOR = REGISTRY.register(NexusModBlocks.MOONLIGHTPROJECTOR.getId().getPath(), () -> new MoonlightprojectorDisplayItem(NexusModBlocks.MOONLIGHTPROJECTOR.get(), new Item.Properties()));
 	public static final DeferredHolder<Item, Item> LOGOBLOCK = block(NexusModBlocks.LOGOBLOCK);
-
+	public static final DeferredHolder<Item, Item> TERMINAL = REGISTRY.register("terminal", () -> new TerminalItem());
 	// Start of user code block custom items
 	// End of user code block custom items
+	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, NexusMod.MODID);
+	public static final DeferredHolder<AttachmentType<?>, AttachmentType<TerminalInventoryCapability>> TERMINAL_INVENTORY = ATTACHMENT_TYPES.register("terminal_inventory", () -> AttachmentType.serializable(TerminalInventoryCapability::new).build());
+
 	public static void register(IEventBus bus) {
 		REGISTRY.register(bus);
+		ATTACHMENT_TYPES.register(bus);
+	}
+
+	@SubscribeEvent
+	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> stack.getData(TERMINAL_INVENTORY), TERMINAL.get());
 	}
 
 	private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {

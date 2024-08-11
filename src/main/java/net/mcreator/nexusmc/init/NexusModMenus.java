@@ -12,6 +12,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.nexusmc.world.inventory.WDGUIMenu;
+import net.mcreator.nexusmc.world.inventory.TGUIMenu;
 import net.mcreator.nexusmc.world.inventory.StoreunusedMenu;
 import net.mcreator.nexusmc.world.inventory.RSHMenu;
 import net.mcreator.nexusmc.world.inventory.IFGUIMenu;
@@ -25,4 +26,5 @@ public class NexusModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<IFGUIMenu>> IFGUI = REGISTRY.register("ifgui", () -> IMenuTypeExtension.create(IFGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<StoreunusedMenu>> STOREUNUSED = REGISTRY.register("storeunused", () -> IMenuTypeExtension.create(StoreunusedMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WDGUIMenu>> WDGUI = REGISTRY.register("wdgui", () -> IMenuTypeExtension.create(WDGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<TGUIMenu>> TGUI = REGISTRY.register("tgui", () -> IMenuTypeExtension.create(TGUIMenu::new));
 }

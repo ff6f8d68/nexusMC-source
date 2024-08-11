@@ -10,6 +10,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.nexusmc.client.gui.WDGUIScreen;
+import net.mcreator.nexusmc.client.gui.TGUIScreen;
 import net.mcreator.nexusmc.client.gui.StoreunusedScreen;
 import net.mcreator.nexusmc.client.gui.RSHScreen;
 import net.mcreator.nexusmc.client.gui.IFGUIScreen;
@@ -24,5 +25,6 @@ public class NexusModScreens {
 		event.register(NexusModMenus.IFGUI.get(), IFGUIScreen::new);
 		event.register(NexusModMenus.STOREUNUSED.get(), StoreunusedScreen::new);
 		event.register(NexusModMenus.WDGUI.get(), WDGUIScreen::new);
+		event.register(NexusModMenus.TGUI.get(), TGUIScreen::new);
 	}
 }
