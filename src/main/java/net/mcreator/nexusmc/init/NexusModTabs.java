@@ -54,6 +54,7 @@ public class NexusModTabs {
 				tabData.accept(NexusModItems.WARPINGDEVICE.get());
 				tabData.accept(NexusModItems.NEXUSRIFTITEM.get());
 				tabData.accept(NexusModBlocks.MOONLIGHTPROJECTOR.get().asItem());
+				tabData.accept(NexusModBlocks.LOGOBLOCK.get().asItem());
 			})
 
 					.build());

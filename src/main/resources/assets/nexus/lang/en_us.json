@@ -66,5 +66,6 @@
   "entity.nexus.nexusrift": "Nexus rift",
   "item.nexus.eyesinthedarkness_spawn_egg": "Eyes in the darkness Spawn Egg",
   "gui.nexus.ctsgui.ctcs": "connect to custom server?",
-  "gui.nexus.rsh.label_redirecting_you_to_the_hub_this": "redirecting you to the hub this can take upto 5 seconds"
+  "gui.nexus.rsh.label_redirecting_you_to_the_hub_this": "redirecting you to the hub this can take upto 5 seconds",
+  "block.nexus.logoblock": "Logo block"
 }

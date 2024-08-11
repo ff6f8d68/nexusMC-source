@@ -35,6 +35,7 @@ import net.mcreator.nexusmc.block.NEXUS_treeFenceBlock;
 import net.mcreator.nexusmc.block.NEXUS_treeButtonBlock;
 import net.mcreator.nexusmc.block.NEXUSCONNECTHUBPortalBlock;
 import net.mcreator.nexusmc.block.MoonlightprojectorBlock;
+import net.mcreator.nexusmc.block.LogoblockBlock;
 import net.mcreator.nexusmc.block.ElectrolyzedpillarBlock;
 import net.mcreator.nexusmc.block.ElectrolyzedcraftingtableBlock;
 import net.mcreator.nexusmc.block.ElectrolyzedblockBlock;
@@ -72,6 +73,7 @@ public class NexusModBlocks {
 	public static final DeferredHolder<Block, Block> ELECTROLYZEDPILLAR = REGISTRY.register("electrolyzedpillar", () -> new ElectrolyzedpillarBlock());
 	public static final DeferredHolder<Block, Block> ELECTROLYZEDCRAFTINGTABLE = REGISTRY.register("electrolyzedcraftingtable", () -> new ElectrolyzedcraftingtableBlock());
 	public static final DeferredHolder<Block, Block> MOONLIGHTPROJECTOR = REGISTRY.register("moonlightprojector", () -> new MoonlightprojectorBlock());
+	public static final DeferredHolder<Block, Block> LOGOBLOCK = REGISTRY.register("logoblock", () -> new LogoblockBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

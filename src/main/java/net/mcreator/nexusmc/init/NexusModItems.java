@@ -65,6 +65,7 @@ public class NexusModItems {
 	public static final DeferredHolder<Item, Item> WARPINGDEVICE = REGISTRY.register("warpingdevice", () -> new WarpingdeviceItem());
 	public static final DeferredHolder<Item, Item> NEXUSRIFTITEM = REGISTRY.register("nexusriftitem", () -> new NexusriftitemItem());
 	public static final DeferredHolder<Item, Item> MOONLIGHTPROJECTOR = REGISTRY.register(NexusModBlocks.MOONLIGHTPROJECTOR.getId().getPath(), () -> new MoonlightprojectorDisplayItem(NexusModBlocks.MOONLIGHTPROJECTOR.get(), new Item.Properties()));
+	public static final DeferredHolder<Item, Item> LOGOBLOCK = block(NexusModBlocks.LOGOBLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

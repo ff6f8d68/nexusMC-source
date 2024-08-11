@@ -1892,11 +1892,23 @@
         "files": [
           "src/main/java/net/mcreator/nexusmc/procedures/ScProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Logoblock",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logoblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/nexus/models/block/logoblock.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/logoblock.json",
+          "src/main/java/net/mcreator/nexusmc/block/LogoblockBlock.java",
+          "src/main/resources/assets/nexus/blockstates/logoblock.json",
+          "src/main/resources/assets/nexus/models/item/logoblock.json"
         ]
       }
     }
@@ -2088,7 +2100,8 @@
       "entity.nexus.nexusrift": "Nexus rift",
       "item.nexus.eyesinthedarkness_spawn_egg": "Eyes in the darkness Spawn Egg",
       "gui.nexus.ctsgui.ctcs": "connect to custom server?",
-      "gui.nexus.rsh.label_redirecting_you_to_the_hub_this": "redirecting you to the hub this can take upto 5 seconds"
+      "gui.nexus.rsh.label_redirecting_you_to_the_hub_this": "redirecting you to the hub this can take upto 5 seconds",
+      "block.nexus.logoblock": "Logo block"
     }
   },
   "foldersRoot": {
