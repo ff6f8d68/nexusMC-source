@@ -119,7 +119,7 @@ public class ServerProcedure {
 					archname = "\u00A79sculpting";
 				}
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7f<manager> this is now your tower and <" + archname + "\u00A7f> is now your manager click on the coordinates below to teleprt to your tower")),
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7f<NEXUS> this is now your tower and <" + archname + "\u00A7f> is now your manager click on the coordinates below to teleprt to your tower")),
 							false);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
