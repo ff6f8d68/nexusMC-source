@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nexus:block/td",
+    "up": "nexus:block/td",
+    "north": "nexus:block/front1",
+    "east": "nexus:block/td",
+    "south": "nexus:block/td",
+    "west": "nexus:block/td",
+    "particle": "nexus:block/td"
+  },
+  "render_type": "cutout_mipped"
+}

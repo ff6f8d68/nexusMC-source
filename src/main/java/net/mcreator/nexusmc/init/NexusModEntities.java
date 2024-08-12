@@ -17,6 +17,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.nexusmc.entity.NexusriftEntity;
+import net.mcreator.nexusmc.entity.NEXUSsusEntity;
 import net.mcreator.nexusmc.entity.EyesinthedarknessEntity;
 import net.mcreator.nexusmc.entity.CorruptedplayerentityEntity;
 import net.mcreator.nexusmc.NexusMod;
@@ -34,6 +35,10 @@ public class NexusModEntities {
 			EntityType.Builder.<CorruptedplayerentityEntity>of(CorruptedplayerentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<NEXUSsusEntity>> NEXU_SSUS = register("nexu_ssus",
+			EntityType.Builder.<NEXUSsusEntity>of(NEXUSsusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -45,6 +50,7 @@ public class NexusModEntities {
 			NexusriftEntity.init();
 			EyesinthedarknessEntity.init();
 			CorruptedplayerentityEntity.init();
+			NEXUSsusEntity.init();
 		});
 	}
 
@@ -53,5 +59,6 @@ public class NexusModEntities {
 		event.put(NEXUSRIFT.get(), NexusriftEntity.createAttributes().build());
 		event.put(EYESINTHEDARKNESS.get(), EyesinthedarknessEntity.createAttributes().build());
 		event.put(CORRUPTEDPLAYERENTITY.get(), CorruptedplayerentityEntity.createAttributes().build());
+		event.put(NEXU_SSUS.get(), NEXUSsusEntity.createAttributes().build());
 	}
 }

@@ -33,6 +33,8 @@ public class NexusModVariables {
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
 	public static String cct = "\"\"";
 	public static List<Object> terminal_chache = new ArrayList<>();
+	public static List<Object> usernames = new ArrayList<>();
+	public static List<Object> passwords = new ArrayList<>();
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -65,6 +67,8 @@ public class NexusModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			if (!event.isWasDeath()) {
 				clone.entity = original.entity;
+				clone.textsss = original.textsss;
+				clone.curse_r = original.curse_r;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -72,17 +76,23 @@ public class NexusModVariables {
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public String entity = "\"\"";
+		public String textsss = "\"\"";
+		public String curse_r = "\"\"";
 
 		@Override
 		public CompoundTag serializeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("entity", entity);
+			nbt.putString("textsss", textsss);
+			nbt.putString("curse_r", curse_r);
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(CompoundTag nbt) {
 			entity = nbt.getString("entity");
+			textsss = nbt.getString("textsss");
+			curse_r = nbt.getString("curse_r");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

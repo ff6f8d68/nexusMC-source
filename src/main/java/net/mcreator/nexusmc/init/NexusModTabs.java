@@ -6,14 +6,19 @@ package net.mcreator.nexusmc.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.nexusmc.NexusMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NexusModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NexusMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NEXUS = REGISTRY.register("nexus",
@@ -55,8 +60,15 @@ public class NexusModTabs {
 				tabData.accept(NexusModItems.NEXUSRIFTITEM.get());
 				tabData.accept(NexusModBlocks.MOONLIGHTPROJECTOR.get().asItem());
 				tabData.accept(NexusModBlocks.LOGOBLOCK.get().asItem());
-				tabData.accept(NexusModItems.TERMINAL.get());
+				tabData.accept(NexusModBlocks.TERMINAL.get().asItem());
 			})
 
 					.build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(NexusModItems.NEXU_SSUS_SPAWN_EGG.get());
+		}
+	}
 }

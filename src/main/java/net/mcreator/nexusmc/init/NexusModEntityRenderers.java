@@ -10,6 +10,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.nexusmc.client.renderer.NexusriftRenderer;
+import net.mcreator.nexusmc.client.renderer.NEXUSsusRenderer;
 import net.mcreator.nexusmc.client.renderer.EyesinthedarknessRenderer;
 import net.mcreator.nexusmc.client.renderer.CorruptedplayerentityRenderer;
 
@@ -20,5 +21,6 @@ public class NexusModEntityRenderers {
 		event.registerEntityRenderer(NexusModEntities.NEXUSRIFT.get(), NexusriftRenderer::new);
 		event.registerEntityRenderer(NexusModEntities.EYESINTHEDARKNESS.get(), EyesinthedarknessRenderer::new);
 		event.registerEntityRenderer(NexusModEntities.CORRUPTEDPLAYERENTITY.get(), CorruptedplayerentityRenderer::new);
+		event.registerEntityRenderer(NexusModEntities.NEXU_SSUS.get(), NEXUSsusRenderer::new);
 	}
 }

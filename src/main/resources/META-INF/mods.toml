@@ -36,4 +36,10 @@ description="was intended to be an MMO but has been discontinued"
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.nexus]]
+    modId="particlepresets"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

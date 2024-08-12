@@ -13,6 +13,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.nexusmc.world.inventory.TGUIMenu;
+import net.mcreator.nexusmc.procedures.TcurserProcedure;
 import net.mcreator.nexusmc.network.TGUIButtonMessage;
 
 import java.util.HashMap;
@@ -35,8 +36,8 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 167;
+		this.imageWidth = 246;
+		this.imageHeight = 202;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("nexus:textures/screens/tgui.png");
@@ -56,7 +57,7 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("nexus:textures/screens/rgt.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("nexus:textures/screens/tgui.png"), this.leftPos + 1, this.topPos + 1, 0, 0, 246, 202, 246, 202);
 
 		RenderSystem.disableBlend();
 	}
@@ -74,21 +75,24 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_run"), 6, 146, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old1"), 6, 133, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old2"), 6, 115, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old3"), 6, 97, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old4"), 6, 79, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old5"), 6, 61, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old6"), 6, 43, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old7"), 6, 25, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old8"), 6, 7, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_run"), 41, 164, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old1"), 41, 151, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old2"), 41, 133, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old3"), 41, 115, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old4"), 41, 97, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old5"), 41, 79, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old6"), 41, 61, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old7"), 41, 43, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old8"), 42, 28, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				TcurserProcedure.execute(entity), 104, 5, -16711936, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		command = new EditBox(this.font, this.leftPos + 43, this.topPos + 143, 118, 18, Component.translatable("gui.nexus.tgui.command"));
+		command = new EditBox(this.font, this.leftPos + 78, this.topPos + 161, 118, 18, Component.translatable("gui.nexus.tgui.command"));
 		command.setMaxLength(32767);
 		guistate.put("text:command", command);
 		this.addWidget(this.command);
@@ -98,7 +102,7 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 				PacketDistributor.SERVER.noArg().send(new TGUIButtonMessage(0, x, y, z, textstate));
 				TGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
-		}).bounds(this.leftPos + 164, this.topPos + 142, 40, 20).build();
+		}).bounds(this.leftPos + 199, this.topPos + 160, 40, 20).build();
 		guistate.put("button:button_run", button_run);
 		this.addRenderableWidget(button_run);
 	}

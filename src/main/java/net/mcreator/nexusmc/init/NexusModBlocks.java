@@ -20,6 +20,7 @@ import net.mcreator.nexusmc.block.Very_dark_oakLeavesBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakFenceGateBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakFenceBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakButtonBlock;
+import net.mcreator.nexusmc.block.TerminalBlock;
 import net.mcreator.nexusmc.block.NexussapplingBlock;
 import net.mcreator.nexusmc.block.NexuscoreblockBlock;
 import net.mcreator.nexusmc.block.NexusbricksBlock;
@@ -74,6 +75,7 @@ public class NexusModBlocks {
 	public static final DeferredHolder<Block, Block> ELECTROLYZEDCRAFTINGTABLE = REGISTRY.register("electrolyzedcraftingtable", () -> new ElectrolyzedcraftingtableBlock());
 	public static final DeferredHolder<Block, Block> MOONLIGHTPROJECTOR = REGISTRY.register("moonlightprojector", () -> new MoonlightprojectorBlock());
 	public static final DeferredHolder<Block, Block> LOGOBLOCK = REGISTRY.register("logoblock", () -> new LogoblockBlock());
+	public static final DeferredHolder<Block, Block> TERMINAL = REGISTRY.register("terminal", () -> new TerminalBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

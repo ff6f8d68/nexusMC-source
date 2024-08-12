@@ -17,6 +17,7 @@ import net.mcreator.nexusmc.world.inventory.StoreunusedMenu;
 import net.mcreator.nexusmc.world.inventory.RSHMenu;
 import net.mcreator.nexusmc.world.inventory.IFGUIMenu;
 import net.mcreator.nexusmc.world.inventory.CTSGUIMenu;
+import net.mcreator.nexusmc.world.inventory.AlguiMenu;
 import net.mcreator.nexusmc.NexusMod;
 
 public class NexusModMenus {
@@ -27,4 +28,5 @@ public class NexusModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<StoreunusedMenu>> STOREUNUSED = REGISTRY.register("storeunused", () -> IMenuTypeExtension.create(StoreunusedMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WDGUIMenu>> WDGUI = REGISTRY.register("wdgui", () -> IMenuTypeExtension.create(WDGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<TGUIMenu>> TGUI = REGISTRY.register("tgui", () -> IMenuTypeExtension.create(TGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<AlguiMenu>> ALGUI = REGISTRY.register("algui", () -> IMenuTypeExtension.create(AlguiMenu::new));
 }

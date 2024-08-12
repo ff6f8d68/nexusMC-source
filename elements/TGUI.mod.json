@@ -3,22 +3,13 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 167,
+    "width": 246,
+    "height": 202,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
-      {
-        "type": "image",
-        "data": {
-          "image": "rgt.png",
-          "use1Xscale": false,
-          "x": 126,
-          "y": 38
-        }
-      },
       {
         "type": "label",
         "data": {
@@ -161,8 +152,8 @@
             "value": -16711936,
             "falpha": 0.0
           },
-          "x": 132,
-          "y": 44
+          "x": 133,
+          "y": 47
         }
       },
       {
@@ -178,6 +169,31 @@
           "height": 20,
           "x": 290,
           "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_tcurser",
+          "text": {
+            "fixedValue": "",
+            "name": "Tcurser"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tgui.png",
+          "use1Xscale": false,
+          "x": 92,
+          "y": 20
         }
       }
     ],

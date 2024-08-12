@@ -15,6 +15,7 @@ import net.mcreator.nexusmc.client.gui.StoreunusedScreen;
 import net.mcreator.nexusmc.client.gui.RSHScreen;
 import net.mcreator.nexusmc.client.gui.IFGUIScreen;
 import net.mcreator.nexusmc.client.gui.CTSGUIScreen;
+import net.mcreator.nexusmc.client.gui.AlguiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class NexusModScreens {
@@ -26,5 +27,6 @@ public class NexusModScreens {
 		event.register(NexusModMenus.STOREUNUSED.get(), StoreunusedScreen::new);
 		event.register(NexusModMenus.WDGUI.get(), WDGUIScreen::new);
 		event.register(NexusModMenus.TGUI.get(), TGUIScreen::new);
+		event.register(NexusModMenus.ALGUI.get(), AlguiScreen::new);
 	}
 }

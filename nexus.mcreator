@@ -428,9 +428,9 @@
       "registry_name": "nexustree",
       "metadata": {
         "files": [
-          "src/main/resources/data/nexus/neoforge/biome_modifier/nexustree_biome_modifier.json",
+          "src/main/resources/data/nexus/worldgen/placed_feature/nexustree.json",
           "src/main/resources/data/nexus/worldgen/configured_feature/nexustree.json",
-          "src/main/resources/data/nexus/worldgen/placed_feature/nexustree.json"
+          "src/main/resources/data/nexus/neoforge/biome_modifier/nexustree_biome_modifier.json"
         ]
       }
     },
@@ -1969,16 +1969,158 @@
     },
     {
       "name": "Terminal",
-      "type": "item",
+      "type": "block",
       "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/nexusmc/item/inventory/TerminalInventoryCapability.java",
-          "src/main/java/net/mcreator/nexusmc/item/TerminalItem.java",
-          "src/main/resources/assets/nexus/models/item/terminal.json"
+          "src/main/java/net/mcreator/nexusmc/block/TerminalBlock.java",
+          "src/main/resources/assets/nexus/models/item/terminal.json",
+          "src/main/resources/assets/nexus/models/block/terminal.json",
+          "src/main/resources/assets/nexus/blockstates/terminal.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/terminal.json"
+        ]
+      }
+    },
+    {
+      "name": "Algui",
+      "type": "gui",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "algui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/world/inventory/AlguiMenu.java",
+          "src/main/java/net/mcreator/nexusmc/client/gui/AlguiScreen.java",
+          "src/main/java/net/mcreator/nexusmc/network/AlguiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "NEXUSsus",
+      "type": "livingentity",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexu_ssus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/entity/NEXUSsusEntity.java",
+          "src/main/resources/assets/nexus/models/item/nexu_ssus_spawn_egg.json",
+          "src/main/java/net/mcreator/nexusmc/client/renderer/NEXUSsusRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "NexuscoreblockBlockAdded",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nexuscoreblock_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/NexuscoreblockBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Login",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "login",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/LoginProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tcurser",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcurser",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/TcurserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Error",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "error",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/ErrorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     }
@@ -2001,6 +2143,30 @@
       "type": "arraylist",
       "scope": "global",
       "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "usernames",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "passwords",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "textsss",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "curse_r",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -2025,10 +2191,10 @@
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:Corruptedforest"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Corruptedforest"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Corruptedforest"
     ],
     "BIOMES:minecraft:has_structure/woodland_mansion": [
@@ -2037,12 +2203,12 @@
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:Corruptedforest"
     ],
-    "BIOMES:minecraft:has_structure/nether_fossil": [
-      "~CUSTOM:Corruptedforest"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:Very_dark_oakSlab",
       "~CUSTOM:NEXUS_treeSlab"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:Corruptedforest"
     ],
     "BIOMES:minecraft:has_structure/bastion_remnant": [
       "~CUSTOM:Corruptedforest"
@@ -2114,13 +2280,15 @@
       "biome.nexus.corruptedforest": "Corrupted forest",
       "block.nexus.very_dark_oak_fence": "Very_dark_oak Fence",
       "gui.nexus.storeunused.button_connect_to_custom_server": "connect",
-      "block.nexus.electrolyzedpillar": "Electrolyzed pillar",
       "item.nexus.nexusriftitem": "Nexus rift",
+      "block.nexus.electrolyzedpillar": "Electrolyzed pillar",
       "item.nexus.nexusshard": "Nexus shard",
       "block.nexus.nexus_tree_planks": "NEXUS_tree Planks",
       "gui.nexus.ctsgui.button_connect_to_custom_server": "connect",
       "gui.nexus.wdgui.button_warp": "warp",
       "block.nexus.nexus_tree_leaves": "NEXUS tree Leaves",
+      "gui.nexus.algui.label_username": "username:",
+      "gui.nexus.algui.button_login": "login",
       "item_group.nexus.nexus": "§k Nexus",
       "block.nexus.nexus_tree_slab": "NEXUS_tree Slab",
       "gui.nexus.ctsgui.label_connecting_to_nexus_link_server": "connecting to nexus link server",
@@ -2133,6 +2301,7 @@
       "gui.nexus.wdgui.yvar": "y",
       "subtitles.warp": "",
       "block.nexus.very_dark_oak_planks": "Very_dark_oak Planks",
+      "gui.nexus.algui.pw": "",
       "gui.nexus.tgui.label_old1": "old1",
       "block.nexus.nexus_tree_log": "NEXUS_tree Log",
       "gui.nexus.tgui.label_old2": "old2",
@@ -2155,6 +2324,7 @@
       "gui.nexus.wdgui.x": "x",
       "block.nexus.very_dark_oak_leaves": "Very_dark_oak Leaves",
       "item.nexus.warpingdevice": "Warping device",
+      "gui.nexus.algui.un": "",
       "gui.nexus.ctsgui.button_host_this_world_as_server": "host this world as server",
       "gui.nexus.wdgui.z": "z",
       "gui.nexus.tgui.command": "",
@@ -2168,6 +2338,7 @@
       "item.nexus.nexustabicon": "Nexustabicon",
       "biome.nexus.nexushub": "Nexushub",
       "gui.nexus.storeunused.label_connect": "connect",
+      "entity.nexus.nexu_ssus": "NEXUS",
       "item.nexus.nexusconnecthub": "NEXUSCONNECTHUB Portal Igniter",
       "block.nexus.very_dark_oak_slab": "Very_dark_oak Slab",
       "block.nexus.nexus_tree_button": "NEXUS_tree Button",
@@ -2177,14 +2348,17 @@
       "item.nexus.nexusrift_spawn_egg": "Nexus rift Spawn Egg",
       "block.nexus.moonlightprojector": "Moonlightprojector",
       "block.nexus.nexus_tree_pressure_plate": "NEXUS_tree Pressure Plate",
+      "block.nexus.terminal": "admin terminal",
       "gui.nexus.wdgui.zvar": "z",
-      "block.nexus.nexuscoreblock": "Nexus heart block",
+      "block.nexus.nexuscoreblock": "Nexus heart",
       "block.nexus.electrolyzedcraftingtable": "Electrolyzed crafting table",
+      "gui.nexus.algui.label_admin_login": "admin login",
       "block.nexus.nexus_tree_stairs": "NEXUS_tree Stairs",
+      "item.nexus.nexu_ssus_spawn_egg": "NEXUS Spawn Egg",
       "gui.nexus.ctsgui.label_connect": "connect",
       "block.nexus.very_dark_oak_pressure_plate": "Very_dark_oak Pressure Plate",
       "entity.nexus.nexusrift": "Nexus rift",
-      "item.nexus.terminal": "Terminal (WIP)",
+      "gui.nexus.algui.label_password": "password:",
       "gui.nexus.tgui.label_run": "run://",
       "item.nexus.eyesinthedarkness_spawn_egg": "Eyes in the darkness Spawn Egg",
       "gui.nexus.ctsgui.ctcs": "connect to custom server?",
@@ -2215,7 +2389,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "geckolib"
+      "geckolib",
+      "particlepresets"
     ],
     "currentGenerator": "neoforge-1.20.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",

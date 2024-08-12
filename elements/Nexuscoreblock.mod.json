@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Nexus heart block",
+    "name": "Nexus heart",
     "specialInformation": {
       "fixedValue": []
     },
@@ -119,6 +119,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "NexuscoreblockBlockAdded"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
