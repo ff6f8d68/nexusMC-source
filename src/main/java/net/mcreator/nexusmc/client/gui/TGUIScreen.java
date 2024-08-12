@@ -57,7 +57,7 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("nexus:textures/screens/tgui.png"), this.leftPos + 1, this.topPos + 1, 0, 0, 246, 202, 246, 202);
+		guiGraphics.blit(new ResourceLocation("nexus:textures/screens/ddd.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 246, 202, 246, 202);
 
 		RenderSystem.disableBlend();
 	}
@@ -86,7 +86,7 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old8"), 42, 28, -16711936, false);
 		guiGraphics.drawString(this.font,
 
-				TcurserProcedure.execute(entity), 104, 5, -16711936, false);
+				TcurserProcedure.execute(entity), 5, 5, -16711936, false);
 	}
 
 	@Override

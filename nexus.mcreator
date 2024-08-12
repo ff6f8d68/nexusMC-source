@@ -2116,12 +2116,7 @@
         "files": [
           "src/main/java/net/mcreator/nexusmc/procedures/ErrorProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     }
   ],

@@ -84,7 +84,7 @@ public class AlguiScreen extends AbstractContainerScreen<AlguiMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.algui.label_password"), 65, 68, -16711936, false);
 		guiGraphics.drawString(this.font,
 
-				ErrorProcedure.execute(entity), 72, 146, -65536, false);
+				ErrorProcedure.execute(), 5, 150, -65536, false);
 	}
 
 	@Override
