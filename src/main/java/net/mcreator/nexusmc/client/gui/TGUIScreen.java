@@ -14,6 +14,14 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.nexusmc.world.inventory.TGUIMenu;
 import net.mcreator.nexusmc.procedures.TcurserProcedure;
+import net.mcreator.nexusmc.procedures.Old8Procedure;
+import net.mcreator.nexusmc.procedures.Old7Procedure;
+import net.mcreator.nexusmc.procedures.Old6Procedure;
+import net.mcreator.nexusmc.procedures.Old5Procedure;
+import net.mcreator.nexusmc.procedures.Old4Procedure;
+import net.mcreator.nexusmc.procedures.Old3Procedure;
+import net.mcreator.nexusmc.procedures.Old2Procedure;
+import net.mcreator.nexusmc.procedures.Old1Procedure;
 import net.mcreator.nexusmc.network.TGUIButtonMessage;
 
 import java.util.HashMap;
@@ -76,14 +84,30 @@ public class TGUIScreen extends AbstractContainerScreen<TGUIMenu> {
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_run"), 41, 164, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old1"), 41, 151, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old2"), 41, 133, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old3"), 41, 115, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old4"), 41, 97, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old5"), 41, 79, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old6"), 41, 61, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old7"), 41, 43, -16711936, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.tgui.label_old8"), 42, 28, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old1Procedure.execute(), 41, 151, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old2Procedure.execute(), 41, 133, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old3Procedure.execute(), 41, 115, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old4Procedure.execute(), 41, 97, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old5Procedure.execute(), 41, 79, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old6Procedure.execute(), 41, 61, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old7Procedure.execute(), 41, 43, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				Old8Procedure.execute(), 42, 28, -16711936, false);
 		guiGraphics.drawString(this.font,
 
 				TcurserProcedure.execute(entity), 5, 5, -16711936, false);

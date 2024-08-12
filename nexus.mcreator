@@ -1892,7 +1892,12 @@
         "files": [
           "src/main/java/net/mcreator/nexusmc/procedures/ScProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -2118,6 +2123,180 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Explodes",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explodes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/ExplodesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Sd",
+      "type": "command",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/command/SdCommand.java"
+        ]
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old1",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old1Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old2",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old2Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old3",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old3Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old4",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old4Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old5",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old5Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old6",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_6",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old6Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old7",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_7",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old7Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
+    },
+    {
+      "name": "Old8",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_8",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/procedures/Old8Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/oldterm"
     }
   ],
   "variable_elements": [

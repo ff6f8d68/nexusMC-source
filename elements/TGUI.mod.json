@@ -41,7 +41,8 @@
         "data": {
           "name": "label_old1",
           "text": {
-            "fixedValue": "old1"
+            "fixedValue": "",
+            "name": "Old1"
           },
           "color": {
             "value": -16711936,
@@ -56,7 +57,8 @@
         "data": {
           "name": "label_old2",
           "text": {
-            "fixedValue": "old2"
+            "fixedValue": "",
+            "name": "Old2"
           },
           "color": {
             "value": -16711936,
@@ -71,7 +73,8 @@
         "data": {
           "name": "label_old3",
           "text": {
-            "fixedValue": "old3"
+            "fixedValue": "old3",
+            "name": "Old3"
           },
           "color": {
             "value": -16711936,
@@ -86,7 +89,8 @@
         "data": {
           "name": "label_old4",
           "text": {
-            "fixedValue": "old4"
+            "fixedValue": "old4",
+            "name": "Old4"
           },
           "color": {
             "value": -16711936,
@@ -101,7 +105,8 @@
         "data": {
           "name": "label_old5",
           "text": {
-            "fixedValue": "old5"
+            "fixedValue": "old5",
+            "name": "Old5"
           },
           "color": {
             "value": -16711936,
@@ -116,7 +121,8 @@
         "data": {
           "name": "label_old6",
           "text": {
-            "fixedValue": "old6"
+            "fixedValue": "old6",
+            "name": "Old6"
           },
           "color": {
             "value": -16711936,
@@ -131,7 +137,8 @@
         "data": {
           "name": "label_old7",
           "text": {
-            "fixedValue": "old7"
+            "fixedValue": "old7",
+            "name": "Old7"
           },
           "color": {
             "value": -16711936,
@@ -146,7 +153,8 @@
         "data": {
           "name": "label_old8",
           "text": {
-            "fixedValue": "old8"
+            "fixedValue": "old8",
+            "name": "Old8"
           },
           "color": {
             "value": -16711936,
