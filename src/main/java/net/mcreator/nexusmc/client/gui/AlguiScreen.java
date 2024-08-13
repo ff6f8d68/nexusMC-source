@@ -8,6 +8,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.PlainTextButton;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
@@ -29,6 +30,7 @@ public class AlguiScreen extends AbstractContainerScreen<AlguiMenu> {
 	public static EditBox un;
 	public static EditBox pw;
 	Button button_login;
+	Button button_login_via_acces_code;
 
 	public AlguiScreen(AlguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -85,6 +87,7 @@ public class AlguiScreen extends AbstractContainerScreen<AlguiMenu> {
 		guiGraphics.drawString(this.font,
 
 				ErrorProcedure.execute(), 5, 150, -65536, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.nexus.algui.label_dont_know_your_login_details"), 14, 127, -16711936, false);
 	}
 
 	@Override
@@ -105,8 +108,18 @@ public class AlguiScreen extends AbstractContainerScreen<AlguiMenu> {
 				PacketDistributor.SERVER.noArg().send(new AlguiButtonMessage(0, x, y, z, textstate));
 				AlguiButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
-		}).bounds(this.leftPos + 62, this.topPos + 119, 51, 20).build();
+		}).bounds(this.leftPos + 62, this.topPos + 106, 51, 20).build();
 		guistate.put("button:button_login", button_login);
 		this.addRenderableWidget(button_login);
+		button_login_via_acces_code = new PlainTextButton(this.leftPos + 28, this.topPos + 138, 129, 20, Component.translatable("gui.nexus.algui.button_login_via_acces_code"), e -> {
+			if (true) {
+				textstate.put("textin:un", un.getValue());
+				textstate.put("textin:pw", pw.getValue());
+				PacketDistributor.SERVER.noArg().send(new AlguiButtonMessage(1, x, y, z, textstate));
+				AlguiButtonMessage.handleButtonAction(entity, 1, x, y, z, textstate);
+			}
+		}, this.font);
+		guistate.put("button:button_login_via_acces_code", button_login_via_acces_code);
+		this.addRenderableWidget(button_login_via_acces_code);
 	}
 }

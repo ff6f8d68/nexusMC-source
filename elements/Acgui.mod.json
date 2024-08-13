@@ -29,11 +29,11 @@
         "type": "textfield",
         "data": {
           "placeholder": "",
-          "name": "un",
+          "name": "ac",
           "width": 120,
           "height": 20,
-          "x": 156,
-          "y": 77
+          "x": 154,
+          "y": 106
         }
       },
       {
@@ -41,40 +41,14 @@
         "data": {
           "name": "label_username",
           "text": {
-            "fixedValue": "username:"
+            "fixedValue": "acces code:"
           },
           "color": {
             "value": -16711936,
             "falpha": 0.0
           },
-          "x": 191,
-          "y": 64
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_password",
-          "text": {
-            "fixedValue": "password:"
-          },
-          "color": {
-            "value": -16711936,
-            "falpha": 0.0
-          },
-          "x": 191,
-          "y": 105
-        }
-      },
-      {
-        "type": "textfield",
-        "data": {
-          "placeholder": "",
-          "name": "pw",
-          "width": 120,
-          "height": 20,
-          "x": 156,
-          "y": 119
+          "x": 188,
+          "y": 93
         }
       },
       {
@@ -115,36 +89,6 @@
           "use1Xscale": false,
           "x": 126,
           "y": 37
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_login_via_acces_code",
-          "text": "login via acces code",
-          "isUndecorated": true,
-          "onClick": {
-            "name": "Fgfasd"
-          },
-          "width": 129,
-          "height": 20,
-          "x": 154,
-          "y": 175
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_dont_know_your_login_details",
-          "text": {
-            "fixedValue": "dont know your login details?"
-          },
-          "color": {
-            "value": -16711936,
-            "falpha": 0.0
-          },
-          "x": 140,
-          "y": 164
         }
       }
     ],

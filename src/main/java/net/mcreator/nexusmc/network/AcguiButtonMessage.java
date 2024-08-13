@@ -15,20 +15,19 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.nexusmc.world.inventory.AlguiMenu;
+import net.mcreator.nexusmc.world.inventory.AcguiMenu;
 import net.mcreator.nexusmc.procedures.LoginProcedure;
-import net.mcreator.nexusmc.procedures.FgfasdProcedure;
 import net.mcreator.nexusmc.NexusMod;
 
 import java.util.Map;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public record AlguiButtonMessage(int buttonID, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
+public record AcguiButtonMessage(int buttonID, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
 
-	public static final ResourceLocation ID = new ResourceLocation(NexusMod.MODID, "algui_buttons");
+	public static final ResourceLocation ID = new ResourceLocation(NexusMod.MODID, "acgui_buttons");
 
-	public AlguiButtonMessage(FriendlyByteBuf buffer) {
+	public AcguiButtonMessage(FriendlyByteBuf buffer) {
 		this(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), mapwork.readTextState(buffer));
 	}
 
@@ -67,7 +66,7 @@ public record AlguiButtonMessage(int buttonID, int x, int y, int z, HashMap<Stri
 		return ID;
 	}
 
-	public static void handleData(final AlguiButtonMessage message, final PlayPayloadContext context) {
+	public static void handleData(final AcguiButtonMessage message, final PlayPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.workHandler().submitAsync(() -> {
 				Player entity = context.player().get();
@@ -86,7 +85,7 @@ public record AlguiButtonMessage(int buttonID, int x, int y, int z, HashMap<Stri
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z, HashMap<String, String> textstate) {
 		Level world = entity.level();
-		HashMap guistate = AlguiMenu.guistate;
+		HashMap guistate = AcguiMenu.guistate;
 		for (Map.Entry<String, String> entry : textstate.entrySet()) {
 			String key = entry.getKey();
 			String value = entry.getValue();
@@ -99,15 +98,11 @@ public record AlguiButtonMessage(int buttonID, int x, int y, int z, HashMap<Stri
 
 			LoginProcedure.execute(world, x, y, z, entity, guistate);
 		}
-		if (buttonID == 1) {
-
-			FgfasdProcedure.execute(world, x, y, z, entity);
-		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		NexusMod.addNetworkMessage(AlguiButtonMessage.ID, AlguiButtonMessage::new, AlguiButtonMessage::handleData);
+		NexusMod.addNetworkMessage(AcguiButtonMessage.ID, AcguiButtonMessage::new, AcguiButtonMessage::handleData);
 	}
 
 }

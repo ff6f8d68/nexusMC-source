@@ -18,6 +18,6 @@ public class NEXUSsusRenderer extends HumanoidMobRenderer<NEXUSsusEntity, Humano
 
 	@Override
 	public ResourceLocation getTextureLocation(NEXUSsusEntity entity) {
-		return new ResourceLocation("nexus:textures/entities/eyes_texture_e_animated.png");
+		return new ResourceLocation("nexus:textures/entities/dd.png");
 	}
 }

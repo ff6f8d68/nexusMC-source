@@ -42,5 +42,6 @@ public class ButtonclickProcedure {
 		if (entity instanceof ServerPlayer _player && !world.isClientSide())
 			PacketDistributor.PLAYER.with(_player).send(new NexusMod.TextboxSetMessage("command", ""));
 		NexusModVariables.terminal_chache.add((guistate.containsKey("text:command") ? ((EditBox) guistate.get("text:command")).getValue() : ""));
+		NexusModVariables.terminal_chache.remove((int) NexusModVariables.terminal_chache.size());
 	}
 }
