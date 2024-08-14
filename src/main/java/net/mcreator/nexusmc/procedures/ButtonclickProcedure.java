@@ -39,9 +39,8 @@ public class ButtonclickProcedure {
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						("/execute as @p at @s run " + (guistate.containsKey("text:command") ? ((EditBox) guistate.get("text:command")).getValue() : "")));
 		}
+		NexusModVariables.terminal_chache.add((guistate.containsKey("text:command") ? ((EditBox) guistate.get("text:command")).getValue() : ""));
 		if (entity instanceof ServerPlayer _player && !world.isClientSide())
 			PacketDistributor.PLAYER.with(_player).send(new NexusMod.TextboxSetMessage("command", ""));
-		NexusModVariables.terminal_chache.add((guistate.containsKey("text:command") ? ((EditBox) guistate.get("text:command")).getValue() : ""));
-		NexusModVariables.terminal_chache.remove((int) NexusModVariables.terminal_chache.size());
 	}
 }
