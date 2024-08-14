@@ -61,6 +61,12 @@ public class NexusModTabs {
 				tabData.accept(NexusModBlocks.MOONLIGHTPROJECTOR.get().asItem());
 				tabData.accept(NexusModBlocks.LOGOBLOCK.get().asItem());
 				tabData.accept(NexusModBlocks.TERMINAL.get().asItem());
+				tabData.accept(NexusModBlocks.FL_0_WER_1.get().asItem());
+				tabData.accept(NexusModBlocks.FLOWER_2.get().asItem());
+				tabData.accept(NexusModBlocks.BLUELAMP.get().asItem());
+				tabData.accept(NexusModBlocks.REDDOTS.get().asItem());
+				tabData.accept(NexusModBlocks.OTHERBLUETHING.get().asItem());
+				tabData.accept(NexusModBlocks.BROWNTHING.get().asItem());
 			})
 
 					.build());

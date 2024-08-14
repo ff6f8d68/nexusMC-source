@@ -21,6 +21,8 @@ import net.mcreator.nexusmc.block.Very_dark_oakFenceGateBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakFenceBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakButtonBlock;
 import net.mcreator.nexusmc.block.TerminalBlock;
+import net.mcreator.nexusmc.block.ReddotsBlock;
+import net.mcreator.nexusmc.block.OtherbluethingBlock;
 import net.mcreator.nexusmc.block.NexussapplingBlock;
 import net.mcreator.nexusmc.block.NexuscoreblockBlock;
 import net.mcreator.nexusmc.block.NexusbricksBlock;
@@ -37,10 +39,14 @@ import net.mcreator.nexusmc.block.NEXUS_treeButtonBlock;
 import net.mcreator.nexusmc.block.NEXUSCONNECTHUBPortalBlock;
 import net.mcreator.nexusmc.block.MoonlightprojectorBlock;
 import net.mcreator.nexusmc.block.LogoblockBlock;
+import net.mcreator.nexusmc.block.Flower2Block;
+import net.mcreator.nexusmc.block.FL0WER1Block;
 import net.mcreator.nexusmc.block.ElectrolyzedpillarBlock;
 import net.mcreator.nexusmc.block.ElectrolyzedcraftingtableBlock;
 import net.mcreator.nexusmc.block.ElectrolyzedblockBlock;
 import net.mcreator.nexusmc.block.CorruptedblockBlock;
+import net.mcreator.nexusmc.block.BrownthingBlock;
+import net.mcreator.nexusmc.block.BluelampBlock;
 import net.mcreator.nexusmc.NexusMod;
 
 public class NexusModBlocks {
@@ -76,6 +82,12 @@ public class NexusModBlocks {
 	public static final DeferredHolder<Block, Block> MOONLIGHTPROJECTOR = REGISTRY.register("moonlightprojector", () -> new MoonlightprojectorBlock());
 	public static final DeferredHolder<Block, Block> LOGOBLOCK = REGISTRY.register("logoblock", () -> new LogoblockBlock());
 	public static final DeferredHolder<Block, Block> TERMINAL = REGISTRY.register("terminal", () -> new TerminalBlock());
+	public static final DeferredHolder<Block, Block> FL_0_WER_1 = REGISTRY.register("fl_0_wer_1", () -> new FL0WER1Block());
+	public static final DeferredHolder<Block, Block> FLOWER_2 = REGISTRY.register("flower_2", () -> new Flower2Block());
+	public static final DeferredHolder<Block, Block> BLUELAMP = REGISTRY.register("bluelamp", () -> new BluelampBlock());
+	public static final DeferredHolder<Block, Block> REDDOTS = REGISTRY.register("reddots", () -> new ReddotsBlock());
+	public static final DeferredHolder<Block, Block> OTHERBLUETHING = REGISTRY.register("otherbluething", () -> new OtherbluethingBlock());
+	public static final DeferredHolder<Block, Block> BROWNTHING = REGISTRY.register("brownthing", () -> new BrownthingBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -68,6 +68,12 @@ public class NexusModItems {
 	public static final DeferredHolder<Item, Item> LOGOBLOCK = block(NexusModBlocks.LOGOBLOCK);
 	public static final DeferredHolder<Item, Item> TERMINAL = block(NexusModBlocks.TERMINAL);
 	public static final DeferredHolder<Item, Item> NEXU_SSUS_SPAWN_EGG = REGISTRY.register("nexu_ssus_spawn_egg", () -> new DeferredSpawnEggItem(NexusModEntities.NEXU_SSUS, -1, -1, new Item.Properties()));
+	public static final DeferredHolder<Item, Item> FL_0_WER_1 = block(NexusModBlocks.FL_0_WER_1);
+	public static final DeferredHolder<Item, Item> FLOWER_2 = block(NexusModBlocks.FLOWER_2);
+	public static final DeferredHolder<Item, Item> BLUELAMP = block(NexusModBlocks.BLUELAMP);
+	public static final DeferredHolder<Item, Item> REDDOTS = block(NexusModBlocks.REDDOTS);
+	public static final DeferredHolder<Item, Item> OTHERBLUETHING = block(NexusModBlocks.OTHERBLUETHING);
+	public static final DeferredHolder<Item, Item> BROWNTHING = block(NexusModBlocks.BROWNTHING);
 
 	// Start of user code block custom items
 	// End of user code block custom items

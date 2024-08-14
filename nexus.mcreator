@@ -2362,6 +2362,108 @@
         "dependencies": []
       },
       "path": "~/oldterm"
+    },
+    {
+      "name": "FL0WER1",
+      "type": "plant",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fl_0_wer_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/block/FL0WER1Block.java",
+          "src/main/resources/assets/nexus/models/item/fl_0_wer_1.json",
+          "src/main/resources/assets/nexus/models/block/fl_0_wer_1.json",
+          "src/main/resources/assets/nexus/blockstates/fl_0_wer_1.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/fl_0_wer_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Flower2",
+      "type": "plant",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flower_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/block/Flower2Block.java",
+          "src/main/resources/assets/nexus/blockstates/flower_2.json",
+          "src/main/resources/assets/nexus/models/block/flower_2.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/flower_2.json",
+          "src/main/resources/assets/nexus/models/item/flower_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Bluelamp",
+      "type": "block",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluelamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/block/BluelampBlock.java",
+          "src/main/resources/assets/nexus/models/block/bluelamp.json",
+          "src/main/resources/assets/nexus/blockstates/bluelamp.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/bluelamp.json",
+          "src/main/resources/assets/nexus/models/item/bluelamp.json"
+        ]
+      }
+    },
+    {
+      "name": "Reddots",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reddots",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/nexus/models/block/reddots.json",
+          "src/main/java/net/mcreator/nexusmc/block/ReddotsBlock.java",
+          "src/main/resources/data/nexus/loot_tables/blocks/reddots.json",
+          "src/main/resources/assets/nexus/models/item/reddots.json",
+          "src/main/resources/assets/nexus/blockstates/reddots.json"
+        ]
+      }
+    },
+    {
+      "name": "Otherbluething",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "otherbluething",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/block/OtherbluethingBlock.java",
+          "src/main/resources/assets/nexus/blockstates/otherbluething.json",
+          "src/main/resources/assets/nexus/models/block/otherbluething.json",
+          "src/main/resources/assets/nexus/models/item/otherbluething.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/otherbluething.json"
+        ]
+      }
+    },
+    {
+      "name": "Brownthing",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brownthing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/nexusmc/block/BrownthingBlock.java",
+          "src/main/resources/assets/nexus/blockstates/brownthing.json",
+          "src/main/resources/assets/nexus/models/block/brownthing.json",
+          "src/main/resources/data/nexus/loot_tables/blocks/brownthing.json",
+          "src/main/resources/assets/nexus/models/item/brownthing.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2452,6 +2554,9 @@
     "BIOMES:minecraft:has_structure/bastion_remnant": [
       "~CUSTOM:Corruptedforest"
     ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:Bluelamp"
+    ],
     "BIOMES:minecraft:has_structure/shipwreck": [
       "~CUSTOM:Corruptedforest"
     ],
@@ -2539,6 +2644,7 @@
       "block.nexus.very_dark_oak_leaves": "Very_dark_oak Leaves",
       "gui.nexus.acgui.pw": "",
       "gui.nexus.ctsgui.button_host_this_world_as_server": "host this world as server",
+      "block.nexus.bluelamp": "OIP 15",
       "block.nexus.very_dark_oak_wood": "Very_dark_oak Wood",
       "block.nexus.nexus_tree_fence": "NEXUS_tree Fence",
       "biome.nexus.verydarkforest": "Very dark forest",
@@ -2569,6 +2675,7 @@
       "gui.nexus.algui.button_login": "login",
       "gui.nexus.acgui.un": "",
       "block.nexus.nexus_tree_slab": "NEXUS_tree Slab",
+      "block.nexus.reddots": "OIP 17",
       "gui.nexus.ctsgui.label_connecting_to_nexus_link_server": "connecting to nexus link server",
       "item.nexus.informationfetcher": "Information fetcher",
       "block.nexus.very_dark_oak_fence_gate": "Very_dark_oak Fence Gate",
@@ -2576,6 +2683,7 @@
       "entity.nexus.eyesinthedarkness": "Eyes in the darkness",
       "gui.nexus.wdgui.yvar": "y",
       "block.nexus.very_dark_oak_planks": "Very_dark_oak Planks",
+      "block.nexus.fl_0_wer_1": "nexus flower type 1",
       "gui.nexus.tgui.label_old1": "old1",
       "block.nexus.nexus_tree_log": "NEXUS_tree Log",
       "gui.nexus.tgui.label_old2": "old2",
@@ -2595,17 +2703,20 @@
       "gui.nexus.wdgui.z": "z",
       "gui.nexus.tgui.command": "",
       "item.nexus.networkdialer": "Network dialer",
+      "block.nexus.brownthing": "OIP 16",
       "item.nexus.nexustabicon": "Nexustabicon",
       "biome.nexus.nexushub": "Nexushub",
       "gui.nexus.storeunused.label_connect": "connect",
       "entity.nexus.nexu_ssus": "NEXUS",
       "item.nexus.nexusconnecthub": "NEXUSCONNECTHUB Portal Igniter",
       "block.nexus.very_dark_oak_slab": "Very_dark_oak Slab",
+      "block.nexus.otherbluething": "OIP 14",
       "block.nexus.nexus_tree_button": "NEXUS_tree Button",
       "item.nexus.nexusrift_spawn_egg": "Nexus rift Spawn Egg",
       "block.nexus.nexus_tree_pressure_plate": "NEXUS_tree Pressure Plate",
       "block.nexus.terminal": "admin terminal",
       "block.nexus.electrolyzedcraftingtable": "Electrolyzed crafting table",
+      "block.nexus.flower_2": "nexus flower type 2",
       "gui.nexus.algui.label_admin_login": "admin login",
       "block.nexus.nexus_tree_stairs": "NEXUS_tree Stairs",
       "item.nexus.nexu_ssus_spawn_egg": "NEXUS Spawn Egg",
