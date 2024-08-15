@@ -2549,10 +2549,10 @@
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:Corruptedforest"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Corruptedforest"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Corruptedforest"
     ],
     "BIOMES:minecraft:has_structure/woodland_mansion": [
@@ -2561,12 +2561,12 @@
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:Corruptedforest"
     ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:Corruptedforest"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:Very_dark_oakSlab",
       "~CUSTOM:NEXUS_treeSlab"
-    ],
-    "BIOMES:minecraft:has_structure/nether_fossil": [
-      "~CUSTOM:Corruptedforest"
     ],
     "BIOMES:minecraft:has_structure/bastion_remnant": [
       "~CUSTOM:Corruptedforest"
@@ -2651,8 +2651,8 @@
       "subtitles.warp": "",
       "gui.nexus.algui.label_login_via_acces_code": "login via acces code",
       "gui.nexus.algui.pw": "",
-      "block.nexus.nexus_tree_wood": "NEXUS_tree Wood",
       "block.nexus.very_dark_oak_button": "Very_dark_oak Button",
+      "block.nexus.nexus_tree_wood": "NEXUS_tree Wood",
       "gui.nexus.storeunused.label_server_ip_of_your_world": "server IP of your world: ",
       "block.nexus.very_dark_oak_stairs": "Very_dark_oak Stairs",
       "gui.nexus.ctsgui.label_server_ip_of_your_world": "server IP of your world: ",
