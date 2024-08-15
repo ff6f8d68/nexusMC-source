@@ -21,6 +21,7 @@ import net.mcreator.nexusmc.block.Very_dark_oakFenceGateBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakFenceBlock;
 import net.mcreator.nexusmc.block.Very_dark_oakButtonBlock;
 import net.mcreator.nexusmc.block.TerminalBlock;
+import net.mcreator.nexusmc.block.Terminal2Block;
 import net.mcreator.nexusmc.block.ReddotsBlock;
 import net.mcreator.nexusmc.block.OtherbluethingBlock;
 import net.mcreator.nexusmc.block.NexussapplingBlock;
@@ -88,6 +89,7 @@ public class NexusModBlocks {
 	public static final DeferredHolder<Block, Block> REDDOTS = REGISTRY.register("reddots", () -> new ReddotsBlock());
 	public static final DeferredHolder<Block, Block> OTHERBLUETHING = REGISTRY.register("otherbluething", () -> new OtherbluethingBlock());
 	public static final DeferredHolder<Block, Block> BROWNTHING = REGISTRY.register("brownthing", () -> new BrownthingBlock());
+	public static final DeferredHolder<Block, Block> TERMINAL_2 = REGISTRY.register("terminal_2", () -> new Terminal2Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

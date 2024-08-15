@@ -67,6 +67,7 @@ public class NexusModTabs {
 				tabData.accept(NexusModBlocks.REDDOTS.get().asItem());
 				tabData.accept(NexusModBlocks.OTHERBLUETHING.get().asItem());
 				tabData.accept(NexusModBlocks.BROWNTHING.get().asItem());
+				tabData.accept(NexusModBlocks.TERMINAL_2.get().asItem());
 			})
 
 					.build());

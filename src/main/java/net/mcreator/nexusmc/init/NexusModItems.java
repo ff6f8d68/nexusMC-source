@@ -74,6 +74,7 @@ public class NexusModItems {
 	public static final DeferredHolder<Item, Item> REDDOTS = block(NexusModBlocks.REDDOTS);
 	public static final DeferredHolder<Item, Item> OTHERBLUETHING = block(NexusModBlocks.OTHERBLUETHING);
 	public static final DeferredHolder<Item, Item> BROWNTHING = block(NexusModBlocks.BROWNTHING);
+	public static final DeferredHolder<Item, Item> TERMINAL_2 = block(NexusModBlocks.TERMINAL_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items

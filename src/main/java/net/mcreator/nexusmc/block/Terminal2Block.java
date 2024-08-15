@@ -30,10 +30,10 @@ import net.mcreator.nexusmc.world.inventory.AlguiMenu;
 
 import io.netty.buffer.Unpooled;
 
-public class TerminalBlock extends Block {
+public class Terminal2Block extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-	public TerminalBlock() {
+	public Terminal2Block() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
@@ -68,7 +68,7 @@ public class TerminalBlock extends Block {
 			player.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("admin terminal type 1");
+					return Component.literal("admin terminal type 2");
 				}
 
 				@Override

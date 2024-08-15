@@ -2464,6 +2464,23 @@
           "src/main/resources/assets/nexus/models/item/brownthing.json"
         ]
       }
+    },
+    {
+      "name": "Terminal2",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminal_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/nexus/blockstates/terminal_2.json",
+          "src/main/resources/assets/nexus/models/block/terminal_2.json",
+          "src/main/java/net/mcreator/nexusmc/block/Terminal2Block.java",
+          "src/main/resources/data/nexus/loot_tables/blocks/terminal_2.json",
+          "src/main/resources/assets/nexus/models/item/terminal_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2714,7 +2731,7 @@
       "block.nexus.nexus_tree_button": "NEXUS_tree Button",
       "item.nexus.nexusrift_spawn_egg": "Nexus rift Spawn Egg",
       "block.nexus.nexus_tree_pressure_plate": "NEXUS_tree Pressure Plate",
-      "block.nexus.terminal": "admin terminal",
+      "block.nexus.terminal": "admin terminal type 1",
       "block.nexus.electrolyzedcraftingtable": "Electrolyzed crafting table",
       "block.nexus.flower_2": "nexus flower type 2",
       "gui.nexus.algui.label_admin_login": "admin login",
@@ -2725,7 +2742,8 @@
       "gui.nexus.algui.label_password": "password:",
       "gui.nexus.acgui.button_login_via_acces_code": "login via acces code",
       "gui.nexus.tgui.label_run": "run://",
-      "block.nexus.logoblock": "Logo block"
+      "block.nexus.logoblock": "Logo block",
+      "block.nexus.terminal_2": "admin terminal type 2"
     }
   },
   "foldersRoot": {
